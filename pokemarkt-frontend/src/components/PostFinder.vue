@@ -4,29 +4,36 @@
             <fieldset>
                 <div>
                     <input type="text" v-model="pokemon_name" v-on:keyup="filtrarPokemons" autofocus>
-                    <input type="submit" value="Buscar" v-on:click="comprovarValor">
-                    <input type="submit" value="Más filtros" v-on:click="mostrarFiltros">
+                    <input type="button" value="Buscar" v-on:click="comprovarValor">
+                    <input type="button" value="Más filtros" v-on:click="mostrarFiltros" data-toggle="modal" data-target="#modalFiltros">
                 </div>
 
-                <div id="divFiltros" v-if="filtros">
-                    <span>Nº Pokedex: (1 - 386)</span><input type="number" v-model="pokemon_numPokedex" min="1" max="386">
-                    <div><input type="checkbox" v-model="pokemon_shiny" value="shiny_true">Variocolor</div>
-                    <div><input type="checkbox" v-model="pokemon_alola" value="alola_true">Alola</div>
-                    <div><input type="checkbox" v-model="pokemon_event" value="event_true">De Evento</div>
-                    <div><span>Distancia maxima: 1Km </span>
-                    <input type="range" min="1" max="500" v-model="distKm"><span>500Km {{ distKm }}Km</span></div>
-                    <div><span>PC minimo: 0 </span>
-                    <input type="range" min="0" max="4000" v-model="pokemon_pc" step="100"><span>4000 o + {{ pokemon_pc }}</span></div>
-                    <span>Precio: </span><input type="number" v-model="price" min="0" max="2500" style="width:50px;">
-                    <input type="checkbox" v-model="free"><span>Gratis</span><br/>
-                    <span>0€ </span><input id="rangePrice" type="range" min="0" max="2500" value="0" v-model="price"><span>2500€ +</span><br/><br/>
-                    <div>Nº Pokedex: (1 - 386)<input type="number" v-model="numToAdd" min="1" max="386">
-                    <button v-on:click="addPokToList">Añadir</button><br/></div>
-                    <template v-for="pokem in pokeOffer">
-                        <span v-bind:key="pokem"><img v-bind:id="pokeOffer.indexOf(pokem)" v-bind:src="pokem" v-on:click="subsFromList"
-                        style="width:50px;height:50px;"></span>
-                    </template>
+                <div class="modal fade" id="modalFiltros" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div id="divFiltros">
+                                <span>Nº Pokedex: (1 - 386)</span><input type="number" v-model="pokemon_numPokedex" min="1" max="386">
+                                <div><input type="checkbox" v-model="pokemon_shiny" value="shiny_true">Variocolor</div>
+                                <div><input type="checkbox" v-model="pokemon_alola" value="alola_true">Alola</div>
+                                <div><input type="checkbox" v-model="pokemon_event" value="event_true">De Evento</div>
+                                <div><span>Distancia maxima: 1Km </span>
+                                <input type="range" min="1" max="500" v-model="distKm"><span>500Km {{ distKm }}Km</span></div>
+                                <div><span>PC minimo: 0 </span>
+                                <input type="range" min="0" max="4000" v-model="pokemon_pc" step="100"><span>4000 o + {{ pokemon_pc }}</span></div>
+                                <span>Precio: </span><input type="number" v-model="price" min="0" max="2500" style="width:50px;">
+                                <input type="checkbox" v-model="free"><span>Gratis</span><br/>
+                                <span>0€ </span><input id="rangePrice" type="range" min="0" max="2500" value="0" v-model="price"><span>2500€ +</span><br/><br/>
+                                <div>Nº Pokedex: (1 - 386)<input type="number" v-model="numToAdd" min="1" max="386">
+                                <button v-on:click="addPokToList">Añadir</button><br/></div>
+                                <template v-for="pokem in pokeOffer">
+                                <span v-bind:key="pokem"><img v-bind:id="pokeOffer.indexOf(pokem)" v-bind:src="pokem" v-on:click="subsFromList"
+                                    style="width:50px;height:50px;"></span>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </fieldset>
         </form>
     </div>
