@@ -5,12 +5,16 @@
                 <div>
                     <input type="text" v-model="pokemon_name" v-on:keyup="filtrarPokemons" autofocus>
                     <input type="button" value="Buscar" v-on:click="comprovarValor">
-                    <input type="button" value="Más filtros" v-on:click="mostrarFiltros" data-toggle="modal" data-target="#modalFiltros">
+                    <input type="button" value="Más filtros" v-on:click="mostrarFiltros" 
+                    data-toggle="modal" data-target="#modalFiltros" data-backdrop="false">
                 </div>
 
-                <div class="modal fade" id="modalFiltros" role="dialog">
+                <div class="modal" id="modalFiltros" role="dialog">
                     <div class="modal-dialog">
                         <div class="modal-content">
+                            <div class="modal-header" style="padding:35px 50px;">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
                             <div id="divFiltros">
                                 <span>Nº Pokedex: (1 - 386)</span><input type="number" v-model="pokemon_numPokedex" min="1" max="386">
                                 <div><input type="checkbox" v-model="pokemon_shiny" value="shiny_true">Variocolor</div>
@@ -131,5 +135,7 @@ export default {
 
 
 <style>
-
+.modal{
+    background-color: rgba(0,0,0,0)
+}
 </style>
