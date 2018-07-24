@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar danger-color-dark navbar-expand-lg navbar-dark py-2">
+    <nav class="navbar danger-color-dark navbar-expand-lg navbar-dark py-1">
       <div class="navbar-brand mr-4">
 				PokeMarkt!
 			</div>
@@ -8,8 +8,11 @@
       
     </nav>
     <!-- <router-view/> -->
-
+    
+    <post class="mt-5" />a
     <post class="mt-5" />
+
+    
   </div>
 </template>
 

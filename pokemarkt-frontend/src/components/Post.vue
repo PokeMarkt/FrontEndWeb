@@ -1,7 +1,14 @@
 <template>
-    <div class="card container">
-        <div class="card-img">
-            <img src="" alt="">
+    <div class="card container postPokemon">
+        <div class="card-img-top">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="">
+        </div>
+        <div class="card-body"> 
+            <p class="card-title">Pikachu</p>
+
+            <p class="">PC: 567</p>
+            
+            
         </div>
     </div>    
 </template>
@@ -16,7 +23,7 @@ export default {
 <style>
 
 .postPokemon {
-    width: 90px;
+    width: 250px;
 }
 
 </style>
