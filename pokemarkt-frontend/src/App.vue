@@ -5,13 +5,9 @@
 				PokeMarkt!
 			</div>
       <post-finder class="centeredSearch"/>
-      
     </nav>
+    <PostContainer/>
     <!-- <router-view/> -->
-    
-    <post class="mt-5" />a
-    <post class="mt-5" />
-
     
   </div>
 </template>
@@ -19,12 +15,14 @@
 <script>
 import PostFinder from './components/PostFinder.vue'
 import Post from './components/Post.vue'
+import PostContainer from './components/PostContainer.vue'
 
 export default {
   name: 'App',
   components: {
     PostFinder,
-    Post
+    Post,
+    PostContainer
   }
 }
 </script>
