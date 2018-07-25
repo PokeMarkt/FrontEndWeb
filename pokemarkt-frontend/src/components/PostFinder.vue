@@ -1,6 +1,6 @@
 <template>
     <div>
-        <form action="">
+        <form>
             <fieldset>
                 <div>
                     <input type="text" v-model="pokemon_name" v-on:keyup="filtrarPokemons" autofocus>
@@ -28,7 +28,8 @@
                                 <input type="checkbox" v-model="free"><span>Gratis</span><br/>
                                 <span>0€ </span><input id="rangePrice" type="range" min="0" max="2500" value="0" v-model="price"><span>2500€ +</span><br/><br/>
                                 <div>Nº Pokedex: (1 - 386)<input type="number" v-model="numToAdd" min="1" max="386">
-                                <button v-on:click="addPokToList">Añadir</button><br/></div>
+                                <!--<button v-on:click="addPokToList">Añadir</button><br/>-->
+                                <input type="button" v-on:click="addPokToList" value="Añadir"></div>
                                 <template v-for="pokem in pokeOffer">
                                 <span v-bind:key="pokem"><img v-bind:id="pokeOffer.indexOf(pokem)" v-bind:src="pokem" v-on:click="subsFromList"
                                     style="width:50px;height:50px;"></span>

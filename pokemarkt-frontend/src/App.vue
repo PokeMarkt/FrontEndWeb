@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar danger-color-dark navbar-expand-lg navbar-dark py-1">
+    <nav class="navbar danger-color-dark navbar-expand-lg navbar-dark py-1 fixed-top">
       <div class="navbar-brand mr-4">
 				PokeMarkt!
 			</div>

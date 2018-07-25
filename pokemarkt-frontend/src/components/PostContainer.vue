@@ -14,7 +14,7 @@ export default {
     },
     data(){
         return{
-            posts:[{nPok:382},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59}]
+            posts:[{nPok:382},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368}]
         }
     }
 }
