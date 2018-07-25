@@ -14,7 +14,7 @@ export default {
     },
     data(){
         return{
-            posts:[{nPok:382},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368},{nPok:299},{nPok:350},{nPok:259},{nPok:235},{nPok:55},{nPok:59},{nPok:368}]
+            posts:[{nPok:382,shiny:false},{nPok:299,shiny:true},{nPok:350,shiny:false},{nPok:259,shiny:true},{nPok:235,shiny:false},{nPok:55,shiny:false},{nPok:59,shiny:false},{nPok:368,shiny:false},{nPok:299,shiny:false},{nPok:386,shiny:true},{nPok:299,shiny:true},{nPok:330,shiny:false},{nPok:288,shiny:true}]
         }
     }
 }
@@ -22,8 +22,8 @@ export default {
 
 <style>
 #postCont{
-    background-color: rgb(243, 242, 187);
     width: 75%;
     margin: auto;
+    margin-top: 62px;
 }
 </style>

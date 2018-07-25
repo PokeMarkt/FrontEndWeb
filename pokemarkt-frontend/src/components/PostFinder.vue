@@ -137,6 +137,6 @@ export default {
 
 <style>
 .modal{
-    padding-top: 10px;
+    padding-top: 30px;
 }
 </style>

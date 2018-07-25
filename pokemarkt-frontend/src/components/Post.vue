@@ -1,25 +1,24 @@
 <template>
-    <div class="card container postPokemon">
+    <div class="card container postPokemon" v-bind:style="bgc">
         <div class="card-img-top">
             <img :src="srcImg">
         </div>
         <div class="card-body"> 
             <p class="card-title">Pikachu {{ post.nPok }}</p>
-
             <p class="">PC: 567</p>
-            
-            
         </div>
-    </div>    
+    </div>
 </template>
 
 <script>
 export default {
     created(){
         this.initImg()
+        this.initPost()
     },
     data(){
         return{
+            bgc:{backgroundColor:"white"},
             srcImg:"../../static/pokemonImages/"
         }
     },
@@ -39,6 +38,10 @@ export default {
             n = this.post.nPok.toString() + ".jpg"
         }
         this.srcImg = this.srcImg + n
+        },
+        initPost(){
+            if(this.post.shiny)
+                this.bgc.backgroundColor="yellow";
         }
     }
 }

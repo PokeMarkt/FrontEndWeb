@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar danger-color-dark navbar-expand-lg navbar-dark py-1 fixed-top">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
       <div class="navbar-brand mr-4">
 				PokeMarkt!
 			</div>
@@ -41,6 +41,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  
+}
+body{
+  background-color: #f0fff3
+}
+
+#nav{
+  background-color: #fa4659
 }
 
 .centeredSearch {
