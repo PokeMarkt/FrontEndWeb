@@ -5,9 +5,10 @@
 				PokeMarkt!
 			</div>
       <post-finder class="centeredSearch"/>
+      <ProfileDropdown/>
     </nav>
-    <PostContainer/>
-    <!-- <router-view/> -->
+
+    <router-view/>
     
   </div>
 </template>
@@ -15,14 +16,18 @@
 <script>
 import PostFinder from './components/PostFinder.vue'
 import Post from './components/Post.vue'
+import Login from './components/Login.vue'
 import PostContainer from './components/PostContainer.vue'
+import ProfileDropdown from './components/ProfileDropdown.vue'
 
 export default {
   name: 'App',
   components: {
     PostFinder,
     Post,
-    PostContainer
+    PostContainer,
+    Login,
+    ProfileDropdown
   }
 }
 </script>
