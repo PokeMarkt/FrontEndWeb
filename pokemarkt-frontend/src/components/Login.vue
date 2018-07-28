@@ -1,7 +1,7 @@
 <template>
     <div>
-        <input type="button" class="btn btn-primary" value="Login"
-                data-toggle="modal" data-target="#modalLogin" data-backdrop="false">
+        <button type="button" class="btn btn-primary" 
+                data-toggle="modal" data-target="#modalLogin" data-backdrop="false">Login</button>
         <div class="modal" id="modalLogin" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -52,8 +52,6 @@ export default {
 </script>
 
 <style>
-    #login{
-        background-color:burlywood
-    }
+
 </style>
 

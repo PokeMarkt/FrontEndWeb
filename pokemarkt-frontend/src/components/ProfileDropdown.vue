@@ -1,8 +1,6 @@
 <template>
-    <div>
-        <div v-if="!logged">
-            <Login/>
-        </div>
+    <div id="profileDD">
+        <Login v-if="!logged"/>
         <div v-else>
             <div class="btn-group">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Perfil</button>
@@ -35,5 +33,8 @@ export default {
 </script>
 
 <style>
-
+#profileDD{
+    height: 50px;
+    width: 130px;
+}
 </style>

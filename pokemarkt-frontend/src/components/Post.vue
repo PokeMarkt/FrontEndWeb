@@ -1,5 +1,5 @@
 <template>
-    <div class="card container postPokemon" v-bind:style="bgc">
+    <div class="card container postPokemon grow" v-bind:style="bgc">
         <div class="card-img-top">
             <img :src="srcImg">
         </div>
@@ -49,6 +49,14 @@ export default {
 </script>
 
 <style>
+.grow { 
+    transform: scale(1); 
+    -webkit-transition:-webkit-transform 0.1s ease-in-out; 
+}
+.grow:hover {
+    transform: scale(1.1); 
+    -webkit-transition:-webkit-transform 0.1s ease-in-out; 
+}
 
 .postPokemon {
     width: 230px;

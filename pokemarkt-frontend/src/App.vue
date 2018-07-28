@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <nav id="nav" class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
-      <div class="navbar-brand mr-4">
-				PokeMarkt!
-			</div>
-      <post-finder class="centeredSearch"/>
-      <ProfileDropdown/>
-    </nav>
+    <header>
+      <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="navbar-brand mr-4">
+          PokeMarkt!
+        </div>
+        <post-finder class="centeredSearch nav-item"/>
+        <ProfileDropdown class="nav-item"/>
+      </nav>
+    </header>
 
     <router-view/>
     
@@ -49,16 +51,19 @@ export default {
   
 }
 body{
-  background-color: #f0fff3
+  background-color: #f0fff3;
 }
 
 #nav{
-  background-color: #fa4659
+  background-color: #fa4659;
 }
 
 .centeredSearch {
   float: none;
   margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
 }
 
 </style>

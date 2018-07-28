@@ -14,13 +14,14 @@ export default {
     },
     data(){
         return{
-            posts:[{nPok:382,shiny:false},{nPok:299,shiny:true},{nPok:350,shiny:false},{nPok:259,shiny:true},{nPok:235,shiny:false},{nPok:55,shiny:false},{nPok:59,shiny:false},{nPok:368,shiny:false},{nPok:299,shiny:false},{nPok:386,shiny:true},{nPok:299,shiny:true},{nPok:330,shiny:false},{nPok:288,shiny:true}]
+            posts:[{nPok:382,shiny:false},{nPok:219,shiny:true},{nPok:350,shiny:false},{nPok:259,shiny:true},{nPok:235,shiny:false},{nPok:55,shiny:false},{nPok:59,shiny:false},{nPok:368,shiny:false},{nPok:277,shiny:false},{nPok:386,shiny:true},{nPok:299,shiny:true},{nPok:330,shiny:false},{nPok:288,shiny:true}]
         }
     }
 }
 </script>
 
 <style>
+
 #postCont{
     width: 75%;
     margin: auto;
