@@ -10,7 +10,7 @@
       </nav>
     </header>
 
-    <router-view/>
+    <router-view class="mt-5"/>
     
   </div>
 </template>
