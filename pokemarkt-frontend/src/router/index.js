@@ -17,6 +17,11 @@ export default new Router({
       component: PostContainer
     },
     {
+      path: '/user',
+      name: '',
+      component: ProfilePage
+    },
+    {
       path: '/test',
       component: TestingComponent
     }

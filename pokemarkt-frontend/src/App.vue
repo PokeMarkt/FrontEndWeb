@@ -52,6 +52,7 @@ export default {
 }
 body{
   background-color: #f0fff3;
+  padding-top: 30px;
 }
 
 #nav{
