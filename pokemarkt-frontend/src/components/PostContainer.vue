@@ -1,5 +1,5 @@
 <template>
-    <div id="postCont">
+    <div id="postCont" class="flex-container">
         <template v-for="p in posts">
             <post v-bind:key="p" class="d-inline-block mx-2 my-2" :post="p"/>
         </template>
@@ -21,6 +21,12 @@ export default {
 </script>
 
 <style>
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 #postCont{
     width: 75%;

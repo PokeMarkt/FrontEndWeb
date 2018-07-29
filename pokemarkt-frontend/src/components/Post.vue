@@ -1,5 +1,5 @@
 <template>
-    <div class="card container postPokemon grow" v-bind:style="bgc">
+    <div class="card container postPokemon grow flex-item" v-bind:style="bgc">
         <div class="card-img-top">
             <img :src="srcImg">
         </div>
@@ -58,7 +58,7 @@ export default {
     -webkit-transition:-webkit-transform 0.1s ease-in-out; 
 }
 
-.postPokemon {
+.card {
     width: 230px;
 }
 
