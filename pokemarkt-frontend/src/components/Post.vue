@@ -58,7 +58,7 @@ export default {
     -webkit-transition:-webkit-transform 0.1s ease-in-out; 
 }
 
-.card {
+.postPokemon {
     width: 230px;
 }
 
