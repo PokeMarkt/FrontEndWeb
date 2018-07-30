@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import PostContainer from '../components/PostContainer.vue'
 import ProfilePage from '../components/ProfilePage.vue'
+import OfferCreate from '../components/OfferCreate.vue'
 
 import TestingComponent from '../components/TestingComponent'
 
@@ -20,6 +21,11 @@ export default new Router({
       path: '/user',
       name: '',
       component: ProfilePage
+    },
+    {
+      path: '/create-offer',
+      name: '',
+      component: OfferCreate
     },
     {
       path: '/test',
