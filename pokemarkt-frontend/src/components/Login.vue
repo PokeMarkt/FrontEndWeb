@@ -1,11 +1,10 @@
 <template>
     <div>
-        <button type="button" class="btn btn-primary" 
-                data-toggle="modal" data-target="#modalLogin" data-backdrop="false">Login</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalLogin" 
+                data-backdrop="false">Login</button>
         <div class="modal" id="modalLogin" role="dialog">
             <div class="modal-dialog">
-                <div class="modal-content">
-
+                <div class="modal-content animate">
                     <div class="modal-header">
                         <div class="tab">
                             <button class="button" v-on:click="switchTab('reg')">Registrarse</button>
@@ -73,6 +72,33 @@ export default {
 </script>
 
 <style>
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
 
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
 </style>
 
